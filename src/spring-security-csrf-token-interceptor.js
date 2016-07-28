@@ -41,7 +41,7 @@
                         var $http,
                             newToken = response.headers(csrfService.settings.csrfTokenHeader);
                             
-                        if (response.status === 403 && csrfService.numRetries < csrfService.settings.maxRetries) {
+                        if (response.status === 401 && csrfService.numRetries < csrfService.settings.maxRetries) {
                             csrfService.getTokenData();
                             $http = $injector.get('$http');
                             csrfService.numRetries = csrfService.numRetries + 1;
