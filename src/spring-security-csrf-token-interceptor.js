@@ -78,7 +78,6 @@
                     init: function(options) {
                         this.settings = angular.extend({}, defaults, options);
                         this.getTokenData();
-                        console.log(this.settings, this.defaults, options);
                     },
                     getTokenData: function() {
                         var xhr = new XMLHttpRequest();
