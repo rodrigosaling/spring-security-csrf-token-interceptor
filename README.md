@@ -1,11 +1,14 @@
 #spring-security-csrf-token-interceptor
 
+The difference on this fork is the use of status number `401` instead of `403`. Maybe one day we could make this an configurable option.
+
 > An AngularJS interceptor that will include the CSRF token header in HTTP requests.
 
 > It does this by doing an AJAX HTTP HEAD call to / by default, and then retrieves the HTTP header 'X-CSRF-TOKEN' and sets this
 same token on all HTTP requests.
 
 `spring-security-csrf-token-interceptor` also supports configuring the CSRF header name, number of retries allowed in-case of Forbidden errors, restrict adding the CSRF tokens to some HTTP types etc.
+
 
 #Installing
 ###Via Bower
