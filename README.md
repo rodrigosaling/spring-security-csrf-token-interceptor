@@ -1,4 +1,4 @@
-#spring-security-csrf-token-interceptor
+# spring-security-csrf-token-interceptor
 
 The difference on this fork is the use of status number `401` instead of `403`. Maybe one day we could make this an configurable option.
 
@@ -10,17 +10,17 @@ same token on all HTTP requests.
 `spring-security-csrf-token-interceptor` also supports configuring the CSRF header name, number of retries allowed in-case of Forbidden errors, restrict adding the CSRF tokens to some HTTP types etc.
 
 
-#Installing
-###Via Bower
+# Installing
+### Via Bower
 ````
 $ bower install spring-security-csrf-token-interceptor
 ````
-###Via NPM
+### Via NPM
 ````
 $ npm install spring-security-csrf-token-interceptor
 ````
 
-#Usage
+# Usage
 Include this as a dependency on your application:
 
 ````javascript
@@ -31,7 +31,7 @@ Use the `configProvider` to customize the interceptor behavior. Check [Configura
 ````javascript
  csrfProvider.config({});
 ````
-#Configuration
+# Configuration
 The following options are available for configuring the interceptor,
 
 ````
@@ -50,7 +50,7 @@ Note: All these below configurations are optional.
 
 - `options.csrfTokenHeader` (String) - Customize the name of the CSRF header on the requests. Default: `X-CSRF-TOKEN`.
 
-###Example
+### Example
 
 ```js
     angular
